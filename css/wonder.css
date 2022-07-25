@@ -9,6 +9,7 @@
   --main-color-alt: #1787e0;
   --main-transation: 0.3s;
   --sec-padding: 100px;
+  --sec-background: #ececec;
 }
 /* variables end  */
 /* global rules start */
@@ -383,6 +384,31 @@ ul {
   animation: moving-arrow 0.6s linear infinite;
 }
 /* articles end  */
+/* start gallery */
+.gallery {
+  padding: var(--sec-padding) 0;
+  position: relative;
+  background-color: var(--sec-background);
+}
+.gallery .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}
+.gallery .box {
+  padding: 15px;
+  background-color: white;
+  box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px 0 rgb(0 0 0 / 12%);
+}
+.gallery .box .image {
+}
+.gallery .box .image::before {
+  content: "";
+}
+.gallery .box img {
+  max-width: 100%;
+}
+/* end gallery */
 /* start animaton */
 @keyframes up-and-down {
   0%,
