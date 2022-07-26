@@ -592,6 +592,31 @@ ul {
   color: #111;
 }
 /* end testimonials */
+/* start team  */
+.team {
+  padding: var(--sec-padding) 0;
+  position: relative;
+}
+.team .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}
+.team .box::before {
+  content: "";
+  background-color: #f3f3f3;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: calc(100% - 60px);
+  height: 100%;
+  z-index: -2;
+  border-radius: 10px;
+}
+.team .data img {
+  width: 100%;
+}
+/* end team  */
 /* start animaton */
 @keyframes up-and-down {
   0%,
