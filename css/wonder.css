@@ -483,7 +483,6 @@ ul {
   bottom: -20px;
   left: 15px;
   height: 5px;
-  background-color: red;
   width: calc(100% - 30px);
 }
 .features .box p {
@@ -495,13 +494,27 @@ ul {
 }
 .features .box a {
   display: block;
-  border: 3px solid red;
+  border: 3px solid transparent;
   width: fit-content;
   margin: 0 auto 30px;
   font-weight: bold;
   font-size: 22px;
   padding: 10px 30px;
-  color: red;
+  border-radius: 6px;
+  transition: var(--main-transation);
+}
+.features .quality .img-holder::before {
+  background-color: rgb(244 64 54 / 60%);
+}
+.features .quality h2::after {
+  background-color: #f44036;
+}
+.features .quality a {
+  color: #f44306;
+  border-color: #f44036;
+  background: linear-gradient(to right, #f44036 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
 }
 /* end features */
 /* start animaton */
