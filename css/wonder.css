@@ -477,6 +477,32 @@ ul {
   width: fit-content;
   margin: auto;
 }
+.features .box h2::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 15px;
+  height: 5px;
+  background-color: red;
+  width: calc(100% - 30px);
+}
+.features .box p {
+  line-height: 2;
+  font-size: 20px;
+  margin: 30px 0;
+  color: #777;
+  padding: 25px;
+}
+.features .box a {
+  display: block;
+  border: 3px solid red;
+  width: fit-content;
+  margin: 0 auto 30px;
+  font-weight: bold;
+  font-size: 22px;
+  padding: 10px 30px;
+  color: red;
+}
 /* end features */
 /* start animaton */
 @keyframes up-and-down {
