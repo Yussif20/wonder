@@ -463,9 +463,19 @@ ul {
   border-style: solid;
   border-width: 0 0 170px 500px;
   border-color: transparent transparent white transparent;
+  transition: var(--main-transation);
 }
 .features .container .img-holder img {
   max-width: 100%;
+}
+.features .box:hover .img-holder::after {
+  border-width: 170px 500px 170px 0;
+}
+.features .box h2 {
+  font-size: 40px;
+  position: relative;
+  width: fit-content;
+  margin: auto;
 }
 /* end features */
 /* start animaton */
