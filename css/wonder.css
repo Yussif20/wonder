@@ -548,6 +548,50 @@ ul {
   color: white;
 }
 /* end features */
+/* start testimonials */
+.testimonials {
+  padding: var(--sec-padding) 0;
+  position: relative;
+  background-color: var(--sec-background);
+}
+.testimonials .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}
+.testimonials .box {
+  padding: 20px;
+  background-color: white;
+  border-radius: 6px;
+  position: relative;
+  border: 0 2px 4px rgb(0 0 0 / 7%);
+}
+.testimonials .box img {
+  position: absolute;
+  right: -10px;
+  top: -50px;
+  width: 100px;
+  border-radius: 50%;
+  border: 10px solid var(--sec-background);
+}
+.testimonials .box h3 {
+  margin: 0 0 10px;
+}
+.testimonials .box .title {
+  display: block;
+  color: #777;
+  margin-bottom: 10px;
+}
+.testimonials .box .rate .filled {
+  color: #ffc107;
+}
+.testimonials .box p {
+  line-height: 1.5;
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: #111;
+}
+/* end testimonials */
 /* start animaton */
 @keyframes up-and-down {
   0%,
