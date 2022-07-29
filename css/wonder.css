@@ -1137,6 +1137,11 @@ ul {
   background-color: var(--sec-background);
   border: 1px solid #ddd;
 }
+@media (max-width: 991px) {
+  .videos .holder {
+    flex-direction: column;
+  }
+}
 .videos .holder .list {
   min-width: 300px;
   background-color: white;
@@ -1154,6 +1159,10 @@ ul {
   transition: var(--main-transation);
   cursor: pointer;
   border-top: 1px solid var(--sec-background);
+}
+.videos .holder .list ul li:hover {
+  background-color: #fafafa;
+  color: var(--main-color);
 }
 .videos .holder .list ul li span {
   display: block;
