@@ -123,6 +123,12 @@ ul {
   bottom: 200px;
   left: 0;
 }
+@media (max-width: 991px) {
+  .dots-up,
+  .dots-down {
+    display: none;
+  }
+}
 /* global rules end */
 /* header start  */
 .header {
